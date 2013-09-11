@@ -12,7 +12,7 @@ scalacOptions += "-deprecation"
 
 resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.2.0-RC1" % "provided")
+addSbtPlugin("play" % "sbt-plugin" % "2.1.3" % "provided")
 
 libraryDependencies += "com.sun.jna" % "jna" % "3.0.9"
 
