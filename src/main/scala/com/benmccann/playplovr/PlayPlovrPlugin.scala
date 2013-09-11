@@ -189,7 +189,8 @@ object PlayPlovrPlugin extends Plugin with PlayPlovrKeys {
   }
 
   private def ensurePlovrJar(plovrTmpDir: File, s: TaskStreams): File = {
-    val plovrRelease = "plovr-81ed862.jar"
+    // new release did not work for me
+    val plovrRelease = "plovr-eba786b34df9.jar"
     val plovrJar: File = new File(plovrTmpDir, plovrRelease)
     if (plovrJar.exists()) {
       return plovrJar;
